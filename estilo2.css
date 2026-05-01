@@ -1,4 +1,4 @@
-body, h1, p {font-family: Arial, sans-serif; margin: 0; padding: 0; color: #0056b3; }
+body, h1, p {font-family: Arial, sans-serif; margin: 0; padding: 0; color: black; }
 header { background-color: #0056b3; color: white; padding: 20px; text-align: center; }
 nav a:hover{color: blue}
 nav { background: #eee; padding: 10px; text-align: center; }
