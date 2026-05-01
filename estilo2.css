@@ -17,7 +17,7 @@ nav a { margin: 0 15px; text-decoration: none; color: #0056b3; font-weight: bold
 .hero { background: #f4f4f4; padding: 20px; text-align: center; }
 .destinos { display: flex; justify-content: space-around; padding: 20px; }
 .tarjeta { border: 1px solid #ccc; background-color: rgba(255, 255, 255, 0.8); text-decoration: none; padding: 15px; border-radius: 8px; width: 30%; text-align: center; }
-footer { color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+footer { text-decoration-color : white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
 
 /* Estilo de la sección de contacto */
 /* Estilos para el diseño de la página */
