@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="stylesheet" href="estilo2.css">
 <title>ROMA</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +20,15 @@ body {
   padding: 30px;
   text-align: center;
   font-size: 35px;
+}
+
+/*style img*/
+ .column img {
+  width: 100%;       /* Ocupa todo el ancho de la columna */
+  height: 330px;     /* Altura fija para todas */
+  object-fit: cover; /* Recorta la imagen para que no se deforme */
+  display: block;    /* Elimina espacios extra abajo */
+  margin: 0 auto;    /* Las centra */
 }
 
 /* Container for flexboxes */
@@ -52,19 +62,32 @@ body {
 }
 </style></head>
 <body>
-
+ <header class="barrasup">
+        <div class="logo">
+          <img src="Logo.png" alt="Logo"> 
+        </div>
+        
+        <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Nosotros</a>
+        <a href="contactomt.html" target="_blank">Contacto</a>
+       </nav>
+    </header>
 <h1>  Roma - Italia</h1>
-<p>      Roma, la "Ciudad Eterna" y capital de Italia, es un epicentro mundial de historia, arte y cultura con casi 3.000 años de antigüedad. Situada a orillas del río Tíber en la región del Lacio, destaca por sus siete colinas históricas, el Coliseo, el Vaticano y la Fontana de Trevi, fusionando ruinas imperiales con la vida moderna.</p>
-<p>La ciudad es un destino ineludible que combina la grandeza del Imperio Romano con el arte del Renacimiento y la cultura italiana contemporánea.</p>
+<p style="color: black; font-size: 15px; text-align: center">      Roma, la "Ciudad Eterna" y capital de Italia, es un epicentro mundial de historia, arte y cultura con casi 3.000 años de antigüedad. Situada a orillas del río Tíber en la región del Lacio, destaca por sus siete colinas históricas, el Coliseo, el Vaticano y la Fontana de Trevi, fusionando ruinas imperiales con la vida moderna.</p>
+<p style="color: black; font-size: 15px; text-align: center">La ciudad es un destino ineludible que combina la grandeza del Imperio Romano con el arte del Renacimiento y la cultura italiana contemporánea.</p>
 
 <div class="header">
-  <h4>Imágenes</h4>
+   <p style="font-family: Arial; font-size: 20px">Imágenes</p>
 </div>
 
 <div class="row">
   <div class="column" ><img src="roma1.jpg"></div>
   <div class="column" ><img src="roma3.jpg"></div>
-  <div class="column"><img src="roma2.jpg"></div>
+    </div>  
+ <div class="row">
+     <div class="column"><img src="roma4.png"></div>
+    <div class="column"><img src="roma2.jpg"></div>
 </div>
 
 <div class="footer">

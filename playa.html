@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="stylesheet" href="estilo2.css">
 <title>PLAYA PARAISO</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +20,16 @@ body {
   padding: 30px;
   text-align: center;
   font-size: 35px;
+  }
+/*style img*/
+ .column img {
+  width: 100%;       /* Ocupa todo el ancho de la columna */
+  height: 330px;     /* Altura fija para todas */
+  object-fit: cover; /* Recorta la imagen para que no se deforme */
+  display: block;    /* Elimina espacios extra abajo */
+  margin: 0 auto;    /* Las centra */
 }
+
 
 /* Container for flexboxes */
 .row {
@@ -52,20 +62,39 @@ body {
 }
 </style></head>
 <body>
-
+ <header class="barrasup">
+        <div class="logo">
+          <img src="Logo.png" alt="Logo"> 
+        </div>
+        
+        <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Nosotros</a>
+        <a href="contactomt.html" target="_blank">Contacto</a>
+       </nav>
+    </header>
 <h1>  Playa Paraíso - México</h1>
-<p>      Situada principalmente en la Riviera Maya (Tulum), México, es reconocida por su arena blanca, aguas turquesas y palmeras, ideal para relajarse o visitar clubes de playa. Es una zona pública, aunque el acceso vehicular puede ser caótico; se recomienda llegar temprano. Destaca por su ambiente natural y limpio.</p>
-<p>Las playas están limpias, seguras, hermosas y tranquilas. Puedes elegir entre ir a un beach club o disfrutar de tus propios pícnics.</p>
+<p style="color:black; font-size: 15px; text-align: center">      Situada principalmente en la Riviera Maya (Tulum), México, es reconocida por su arena blanca, aguas turquesas y palmeras, ideal para relajarse o visitar clubes de playa. Es una zona pública, aunque el acceso vehicular puede ser caótico; se recomienda llegar temprano. Destaca por su ambiente natural y limpio.</p>
+<p style="color:black; font-size: 15px; text-align: center">Las playas están limpias, seguras, hermosas y tranquilas. Puedes elegir entre ir a un beach club o disfrutar de tus propios pícnics.</p>
 
 <div class="header">
-  <h4>Imágenes</h4>
+ <p style="font-family: Arial; font-size: 20px">Imágenes</p>
 </div>
 
 <div class="row">
-  <div class="column" ><img src="playa-paraiso.jpg"></div>
+  <div class="column" ><img src="playa-paraiso.jpg"  ></div>
+  <div class="column" ><img src="playap.jpg" ></div>
+  
+  </div>
+    
+    <div class="row">
+        <div class="column"><img src="playa-paraiso%20(1).jpg"   ></div>
+        <div class="column"><img src="playa.png"     ></div>
+    </div>    
+    
 
-  <div class="column"><img src="playap.jpg" width="600"; height="400"></div>
-</div>
+
+
 
 <div class="footer">
   <a href="index.html">
