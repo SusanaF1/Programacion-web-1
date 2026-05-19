@@ -5,64 +5,17 @@
 <title>MACHU PICCHU</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-h1{text-align: center}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+ <script src="https://kit.fontawesome.com/ea24eed118.js" crossorigin="anonymous"></script>
+ <style> h1{text-align: center}</style> 
+<style> body {
+      background-image: url('images2.jpg');
+      background-attachment: fixed;
+      background-size: cover;   }
+    </style> 
 
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-}
-
-/*style img*/
- .column img {
-  width: 100%;       /* Ocupa todo el ancho de la columna */
-  height: 300px;     /* Altura fija para todas */
-  object-fit: cover; /* Recorta la imagen para que no se deforme */
-  display: block;    /* Elimina espacios extra abajo */
-  margin: 0 auto;    /* Las centra */
-}
-    
-/* Container for flexboxes */
-.row {
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* Create three equal columns that sits next to each other */
-.column {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 10px;
-  height: 500px; /* Should be removed. Only for demonstration */
-}
-
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-   
-}
-</style></head>
+</head>
 <body>
+     
  <header class="barrasup">
         <div class="logo">
           <img src="Logo.png" alt="Logo"> 
@@ -73,25 +26,47 @@ body {
         <a href="nosotros.html">Nosotros</a>
         <a href="contactomt.html" target="_blank">Contacto</a>
        </nav>
-    </header>
-<h1>  Machu Picchu - Perú</h1>
-<p style="color: black; font-size: 15px; text-align: center">      Machu Picchu, maravilla del mundo en Perú, es un destino imperdible. La mejor época es la estación seca (abril-octubre), con acceso vía tren o el Camino Inca.</p>
+    </header> 
+   
+  
+<section class="hero">
+        <h1>Mora Tours</h1>
+        <h2>Visita Machu Picchu</h2>
+        <p>Perú</p>
+    </section>  
+<section class="destinos">
+        <div  class="tarjeta">
+            <h3>Machu Picchu - Perú</h3>
+            <p>
+               <br>                                                 
+              <p style="color:black; font-size: 15px; text-align: center">     Machu Picchu, maravilla del mundo en Perú, es un destino imperdible. La mejor época es la estación seca (abril-octubre), con acceso vía tren o el Camino Inca.</p>
 <p style="color:black; font-size: 15px; text-align: center">Éste es un lugar que maravilla a visitantes de todo el mundo por la belleza de sus montañas (Machu Picchu y Huayna Picchu, que significa “montaña joven” en quechua), la hermosa vegetación que rodea el santuario, y sus ruinas arqueológicas, vestigios de una civilización que existió hace cientos de años.</p>
 
-<div class="header">
- <p style="font-family: Arial; font-size: 20px">Imágenes</p>
-</div>
 
-<div class="row">
-  <div class="column" ><img src="machupicchu1.jpg" alt="Machu Pichu" ></div>
-  <div class="column" ><img src="machu%20pich.jpg" alt="Machu Pichu"></div>
-  
-  </div>
-    
-    <div class="row">
-        <div class="column"><img src="machupicchu2.jpg" alt="Machu Pichu"></div>
-        <div class="column"><img src="trenmachup.png" alt="Machu Pichu" ></div>
-    </div>
+<p style="color:black; font-size: 15px; text-align: center">Las playas están limpias, seguras, hermosas y tranquilas. Puedes elegir entre ir a un beach club o disfrutar de tus propios pícnics.</p>
+            
+        </div> 
+           <div  class="tarjeta">
+            <h3>Nuestros hoteles</h3>
+            <p>Contamos con hoteles de 3, 4 y 5 estrellas. Todos con el máximo confort que estás buscando para disfrutar de las maravillas del lugar.
+                Todos los traslados incluidos. Entradas al Parque (incluye tickets de tren)
+               </p>
+        </div>
+        <div  class="tarjeta">
+            <h3>Reservas y consultas</h3>
+            <p>Comunicate a través de nuestro WhatsApp, email y nuestras oficinas físicas en Merlo.
+            Así, estés donde estés, siempre podés contar con nosotros.
+            En Mora Tours sabemos que cada viaje es único. 
+                Organizamos tu viaje a medida.
+            </p>
+          <a href="https://wa.me" class="btn-whatsapp" target="_blank">
+  <i class="fa fa-whatsapp"></i> 
+</a>  
+        </div>  
+
+             
+    </section>
+
         
 
 <div class="footer">

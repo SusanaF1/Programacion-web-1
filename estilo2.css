@@ -16,7 +16,7 @@ nav a { margin: 0 15px; text-decoration: none; color: #0056b3; font-weight: bold
 }       
 .hero { background: #f4f4f4; padding: 20px; text-align: center; }
 .destinos { display: flex; justify-content: space-around; padding: 20px; }
-.tarjeta { border: 1px solid #ccc; background-color: rgba(255, 255, 255, 0.8); text-decoration: none; padding: 15px; border-radius: 8px; width: 30%; text-align: center; }
+.tarjeta { border: 1px solid #ccc; background-color: rgba(255, 255, 255, 0.5); text-decoration: none; padding: 15px; border-radius: 8px; width: 30%; text-align: center; }
 footer { text-decoration-color : white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
 .btn-whatsapp {
     position: fixed;
@@ -97,3 +97,49 @@ footer { text-decoration-color : white; text-align: center; padding: 10px; posit
 .contact-form button:hover {
             background-color: #0056b3;
         }
+/* --- ESTILOS EXCLUSIVOS PARA EL CARRUSEL --- */
+.carrusel-contenedor {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Ajusta la altura de las fotos aquí */
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.carrusel-pantalla {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carrusel-pantalla img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Flechas de navegación */
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.carrusel-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.btn-izq { left: 10px; }
+.btn-der { right: 10px; }
