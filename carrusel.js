@@ -1,6 +1,5 @@
 function moverCarrusel(event, boton, direccion) {
-    event.preventDefault(); // Evita que al hacer clic en las flechas se abra el enlace de la tarjeta
-    
+       
     const contenedor = boton.closest('.carrusel-contenedor');
     const pantalla = contenedor.querySelector('.carrusel-pantalla');
     const imagenes = pantalla.querySelectorAll('img');
