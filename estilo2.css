@@ -15,8 +15,10 @@ nav a { margin: 0 15px; text-decoration: none; color: #0056b3; font-weight: bold
     width: auto;
 }       
 .hero { background: #f4f4f4; padding: 20px; text-align: center; }
-.destinos { display: flex; justify-content: space-around; padding: 20px; }
-.tarjeta { border: 1px solid #ccc; background-color: rgba(255, 255, 255, 0.5); text-decoration: none; padding: 15px; border-radius: 8px; width: 30%; text-align: center; }
+.destinos { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; padding: 20px; }
+.tarjeta { border: 1px solid #ccc; background-color: rgba(255, 255, 255, 0.5); text-decoration: none; padding: 15px; border-radius: 8px; width: 100%; max-width: 350px; text-align: center; box-sizing: border-box;}
+.vermas { display: inline-block; background-color: #007bff; color: white !important; text-decoration: none; padding: 8px 20px; border-radius: 4px; margin-top: 15px; font-weight: bold; transition: background-color 0.2s;}
+.vermas:hover { background-color:#0056b3;}
 footer { text-decoration-color : white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
 .btn-whatsapp {
     position: fixed;
