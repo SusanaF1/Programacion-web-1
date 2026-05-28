@@ -143,3 +143,60 @@ footer { text-decoration-color : white; text-align: center; padding: 10px; posit
 
 .btn-izq { left: 10px; }
 .btn-der { right: 10px; }
+
+/* ==========================================================================
+   ESTILOS RESPONSIVOS PARA CELULARES (No alteran el diseño de la PC)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Menú superior: Pasa a formato vertical y se centra */
+    .barrasup {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 2%;
+    }
+    
+    .logo img {
+        height: 70px; /* Logo un poco más chico para que no ocupe toda la pantalla */
+    }
+
+    nav {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    nav a {
+        margin: 0 8px; /* Reduce espacio entre enlaces para que no se corten */
+        font-size: 15px;
+    }
+
+    /* 2. Sección de Destinos: Las tarjetas se apilan una debajo de otra */
+    .destinos {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px; /* Espaciado entre tarjeta y tarjeta */
+        padding: 15px;
+    }
+
+    .tarjeta {
+        width: 90%; /* Ocupan casi todo el ancho de la pantalla del celular */
+        box-sizing: border-box;
+    }
+
+    /* 3. Página de Contacto: Se apilan los bloques de info, formulario y mapa */
+    .contact {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-info, .contact-form, .map {
+        width: 100%;
+        flex: none;
+    }
+
+    /* 4. Ajuste del mapa de Google: Evita el desborde horizontal */
+    .map iframe {
+        width: 100% !important;
+        height: 300px; /* Altura fija cómoda para operar con el dedo */
+    }
+}
