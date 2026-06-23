@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ea24eed118.js" crossorigin="anonymous"></script>        
+    <title>Mora Tours</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <style> 
+        body {
+              background-image: url('images2.jpg');
+              background-attachment: fixed;
+              background-size: cover;   
+             }
+    </style> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>  
+  <header class="barrasup">
+    <div class="logo">
+     <img src="Logo.png" alt="Logo"> 
+    </div>
+        
+     <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contactomt.html" target="_blank">Contacto</a>
+     </nav>
+  </header>
+  <a href="https://wa.me" class="btn-whatsapp" target="_blank">
+   <i class="fa fa-whatsapp"></i> 
+  </a>
+      
+  <section class="hero">
+        <h1>Mora Tours</h1>
+        <h2>Tu próxima aventura comienza aquí</h2>
+        <p>Encuentra los mejores paquetes turísticos al mejor precio.</p>
+  </section>
+   
+   <section class="destinos">
+        <div class="tarjeta">
+            <div class="carrusel-contenedor">
+                <button class="carrusel-btn btn-izq" onclick="moverCarrusel(event, this, -1)">&#10094;</button>
+                <div class="carrusel-pantalla">
+                    <img src="playap.jpg" alt="Playa 1">
+                    <img src="playa-paraiso%20(1).jpg" alt="Playa 2">
+                    <img src="playa-paraiso.jpg" alt="Playa 3">
+                    <img src="playa.jpg" alt="Playa 4">
+                </div>
+                <button class="carrusel-btn btn-der" onclick="moverCarrusel(event, this, 1)">&#10095;</button>
+            </div>
+            <h3>Playa Paraíso</h3>
+            <p>Disfruta del sol y la arena blanca.<br>Descubre la belleza del Caribe<br>Bañate en aguas cristalinas y cálidas<br>Recorre la ciudad de Tulum descubriendo su historia y cultura y no te pierdas de la gran vida nocturna.</p>
+            <a href="playa.html" class="vermas">Ver más</a>
+        </div>
+
+        <div class="tarjeta">
+            <div class="carrusel-contenedor">
+                <button class="carrusel-btn btn-izq" onclick="moverCarrusel(event, this, -1)">&#10094;</button>
+                <div class="carrusel-pantalla">
+                    <img src="machu%20pich.jpg" alt="Machu Picchu 1">
+                    <img src="trenmachup.png" alt="Machu Picchu 2">
+                    <img src="machupicchu1.jpg" alt="Machu Picchu 3">
+                    <img src="machupicchu2.jpg" alt="Machu Picchu 4">
+                </div>
+                <button class="carrusel-btn btn-der" onclick="moverCarrusel(event, this, 1)">&#10095;</button>
+            </div>
+            <h3>Machu Picchu</h3>
+            <p>Senderismo y aire puro en las alturas.<br>Recorre la antigua ciudadela Inca rodeada de montañas, mucha vegetación y fabulosas vistas.<br>Aprende sobre esta impresionante civilización y asombrate con bellas e imponentes vistas.</p><br>
+            <a href="machupicchu.html" class="vermas">Ver más</a>
+        </div>
+        
+        <div class="tarjeta">
+            <div class="carrusel-contenedor">
+                <button class="carrusel-btn btn-izq" onclick="moverCarrusel(event, this, -1)">&#10094;</button>
+                <div class="carrusel-pantalla">
+                    <img src="roma1.jpg" alt="Roma 1">
+                    <img src="roma4.png" alt="Roma 2">
+                    <img src="roma2.jpg" alt="Roma 2">
+                    <img src="roma3.jpg" alt="Roma 2">
+                </div>
+                <button class="carrusel-btn btn-der" onclick="moverCarrusel(event, this, 1)">&#10095;</button>
+            </div>
+            <h3>Ciudad de Roma</h3>
+            <p>Descubre la cultura y la arquitectura.<br>Pasea por antiguas y pintorescas calles de la ciudad.<br>Tómate un delicioso capuccino con un maravilloso panini, o disfruta de las mejores pastas</p><br>
+            <a href="roma.html" class="vermas">Ver más</a>
+        </div>
+    </section>
+
+     <!-- VÍNCULO AL NUEVO ARCHIVO JAVASCRIPT EXTERNO -->
+    <script src="carrusel.js"></script>
+</body>
+</html>

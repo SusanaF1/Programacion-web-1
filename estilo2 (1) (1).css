@@ -1,0 +1,247 @@
+body, h1, p {font-family: Arial, sans-serif; 
+             margin: 0; 
+             padding: 0; 
+             color: black; }
+header { background-color: #0056b3; 
+        color: white; 
+        padding: 20px; 
+        text-align: center; }
+nav a:hover{color: blue}
+nav { background: #eee; 
+     padding: 10px; 
+     text-align: center; }
+nav a { margin: 0 15px; 
+       text-decoration: none; 
+       color: #0056b3; 
+       font-weight: bold; }
+.barrasup {
+           display: flex;
+           justify-content: space-between; /* Empuja el logo a la izquierda y el nav a la derecha */
+           align-items: center;            /* Centra ambos verticalmente */
+           padding: 10px 5%;              /* Espacio a los lados para que no toquen el borde */
+           background-color: #4DE3F7;
+                  }
+.logo img {
+    height: 100px;  /* Ajusta el tamaño de logo aquí */
+    width: auto;
+}       
+.hero { background: #f4f4f4; 
+       padding: 20px; 
+       text-align: center; }
+.destinos { display: flex; 
+           justify-content: space-around; 
+           flex-wrap: wrap; 
+           gap: 20px; 
+           padding: 20px; }
+.tarjeta { border: 1px solid #ccc; 
+          background-color: rgba(255, 255, 255, 0.5); 
+          text-decoration: none; 
+          padding: 15px; 
+          border-radius: 8px; 
+          width: 100%; 
+          max-width: 350px; 
+          text-align: center; 
+          box-sizing: border-box;}
+.vermas { display: inline-block; 
+         background-color: #007bff; 
+         color: white !important; 
+         text-decoration: none; 
+         padding: 8px 20px;
+         border-radius: 4px; 
+         margin-top: 15px; 
+         font-weight: bold; 
+         transition: background-color 0.2s;}
+.vermas:hover { background-color:#0056b3;}
+footer { text-decoration-color : white; 
+        text-align: center; 
+        padding: 10px; 
+        position: fixed; 
+        bottom: 0; width: 100%; }
+.btn-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 1000;
+  }
+/* Estilo de la sección de contacto */
+/* Estilos para el diseño de la página */
+.contact {
+            display: flex;
+            flex-wrap: wrap; /* Permite que los elementos se ajusten en una fila cuando el espacio es insuficiente */
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+.contact-info, .contact-form {flex: 1;
+                              padding: 20px; 
+                              box-sizing: border-box;}
+.map {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 100%; /* Para asegurarse de que el mapa no exceda el tamaño del contenedor */
+            overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del contenedor */
+        }
+
+.map iframe {
+            width: 100%; /* Hace que el iframe ocupe el 100% del ancho del contenedor */
+            height: 100%; /* Hace que el iframe ocupe el 100% de la altura del contenedor */
+        }
+
+        /* Estilos para la sección de contacto */
+.contact-info h1, .contact-form h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+.contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+.contact-info ul li {
+            margin-bottom: 10px;
+        }
+
+.contact-form form {
+            max-width: 400px;
+        }
+
+.contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+.contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+.contact-form button:hover {
+            background-color: #0056b3;
+        }
+/* --- ESTILOS EXCLUSIVOS PARA EL CARRUSEL --- */
+.carrusel-contenedor {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Ajusta la altura de las fotos aquí */
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.carrusel-pantalla {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carrusel-pantalla img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Flechas de navegación */
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.carrusel-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.btn-izq { left: 10px; }
+.btn-der { right: 10px; }
+
+/* ==========================================================================
+   ESTILOS RESPONSIVOS PARA CELULARES (No alteran el diseño de la PC)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Menú superior: Pasa a formato vertical y se centra */
+    .barrasup {
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 15px 5% !important;
+        align-items: center !important;
+    }
+    
+    .logo img {
+        height: 60px !important; /* Logo un poco más chico para que no ocupe toda la pantalla */
+    }
+
+    nav {
+        width: 100% !important;
+        background: transparent !important;
+        padding: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    nav a {
+        margin: 0 10px !important; /* Reduce espacio entre enlaces para que no se corten */
+        font-size: 16px !important;
+    }
+
+   /* 2. Flexibilidad para contenedores de Inicio, Nosotros y Contacto */
+    .destinos, 
+    .contact,
+    main, 
+    section { 
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        padding: 15px !important;
+    }
+
+    /* 3. Ajuste de Tarjetas y Bloques de Texto (Ocupan el ancho del celular) */
+    .tarjeta, 
+    .contact-info, 
+    .contact-form, 
+    .map,
+    section > div {        
+        width: 95% !important;
+        max-width: 100% !important;
+        flex: none !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 4. Ajuste del mapa de Google */
+    .map iframe {
+        width: 100% !important;
+        height: 250px !important;
+    }
+}
