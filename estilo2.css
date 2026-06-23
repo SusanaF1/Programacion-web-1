@@ -1,11 +1,10 @@
-body, h1, p {font-family: Arial, sans-serif; 
+body, h1, p, a{font-family: Arial, sans-serif; 
              margin: 0; 
              padding: 0; 
              color: black; }
 header { background-color: #0056b3; 
         color: white; 
-        padding: 20px; 
-        text-align: center; }
+         }
 nav a:hover{color: blue}
 nav { background: #eee; 
      padding: 10px; 
@@ -18,7 +17,7 @@ nav a { margin: 0 15px;
            display: flex;
            justify-content: space-between; /* Empuja el logo a la izquierda y el nav a la derecha */
            align-items: center;            /* Centra ambos verticalmente */
-           padding: 10px 5%;              /* Espacio a los lados para que no toquen el borde */
+           padding: 12px 5%;              /* Espacio a los lados para que no toquen el borde */
            background-color: #4DE3F7;
                   }
 .logo img {
